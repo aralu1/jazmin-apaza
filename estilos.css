@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-weight: bold; 
+    color: violet; 
+    text-align: center; 
+    width: 100%;
+    font-size: 40px; 
+  }
+  .cuerpo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+  }
+  
+  .cabeza {
+      width: 200px;
+      height: 90px;
+      background-color: #d2a679;
+      border: 5px solid #7a4e2f;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+  }
+ 
+  
+  .cabeza::before, .cabeza::after {
+      content: '';
+      position: absolute;
+      background-color: #7a4e2f;
+  }
+  
+  .cabeza::before {
+      width: 30px;
+      height: 30px;
+      left: 20px;
+      top: 20px;
+  }
+  
+  .cabeza::after {
+      width: 30px;
+      height: 30px;
+      right: 20px;
+      top: 20px;
+  }
+  
+  .cab {
+      width: 150px;
+      height: 150px;
+      background-color: #d2a679;
+      border-left: 5px solid #7a4e2f;
+      border-right: 5px solid #7a4e2f;
+      position: relative;
+  }
+  
+  .arms {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      padding: 0 15px;
+  }
+  
+  .left-arm, .right-arm {
+      width: 30px;
+      height: 40px;
+      background-color: #d2a679;
+      border: 5px solid #7a4e2f;
+  }
+  
+  .hands {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      padding: 0 15px;
+  }
+  
+  .left-hand, .right-hand {
+      width: 20px;
+      height: 50px;
+      background-color: #d2a679;
+      border: 5px solid #7a4e2f;
+  }
+  
+  .bottles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      width: 100%;
+  }
+  
+  .bottle {
+      width: 30px;
+      height: 60px;
+      background-color: #7a4e2f;
+      margin: 0 5px;
+  }
+  
+  .legs {
+      width: 150px;
+      height: 80px;
+      background-color: #d2a679;
+      border: 5px solid #7a4e2f;
+      border-radius: 0 0 10px 10px;
+      margin-top: 10px;
+  }
+  
+  .legs::before, .legs::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 40px;
+      background-color: #7a4e2f;
+      bottom: 5px;
+  }
+  
+  .legs::before {
+      left: 15px;
+  }
+  
+  .legs::after {
+      right: 15px;
+  }
+  
+  .base {
+      width: 200px;
+      height: 40px;
+      background-color: #7a4e2f;
+      border-radius: 5px;
+     
+  }
+  
